@@ -10,4 +10,8 @@
 
 @interface FirstViewController : NSViewController
 
+@property (weak) IBOutlet NSTextField *textField;
+
+-(IBAction)changeText:(id)sender;
+
 @end

@@ -13,6 +13,8 @@
 @end
 
 @implementation FirstViewController
+@synthesize textField = _textField;
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -22,5 +24,11 @@
     }
     return self;
 }
+
+-(IBAction)changeText:(id)sender
+{
+    [_textField setStringValue:@"Changed Value"];
+}
+
 
 @end

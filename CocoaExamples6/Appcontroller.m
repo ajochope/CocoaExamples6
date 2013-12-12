@@ -51,6 +51,8 @@ NSString *const kSecondView = @"SecondViewController";
 
     [_ourView addSubview:[_ourViewController view]];
     [[_ourViewController view] setFrame:[_ourView bounds]];
+    [[_ourViewController view] setAutoresizingMask:NSViewWidthSizable|NSViewWidthSizable];
+    
     
 }
 

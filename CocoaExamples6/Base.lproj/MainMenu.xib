@@ -650,25 +650,29 @@
         <window title="CocoaExamples6" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="371">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="335" y="390" width="480" height="360"/>
+            <rect key="contentRect" x="335" y="390" width="511" height="360"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1280" height="778"/>
             <view key="contentView" id="372">
-                <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
+                <rect key="frame" x="0.0" y="0.0" width="511" height="360"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IpR-HS-8ui">
-                        <rect key="frame" x="20" y="55" width="443" height="294"/>
+                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="IpR-HS-8ui">
+                        <rect key="frame" x="20" y="66" width="471" height="274"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="abm-nw-SVh"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="eM7-Js-9Y8"/>
+                        </constraints>
                     </customView>
-                    <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aiU-lK-8jo">
-                        <rect key="frame" x="203" y="23" width="75" height="26"/>
+                    <popUpButton verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aiU-lK-8jo">
+                        <rect key="frame" x="167" y="22" width="126" height="26"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <popUpButtonCell key="cell" type="push" title="First" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="dqk-FA-1Md" id="s5J-Y2-C5v">
+                        <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="s5J-Y2-C5v">
                             <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
+                            <font key="font" metaFont="menu"/>
                             <menu key="menu" title="OtherViews" id="LRz-4q-KPw">
                                 <items>
-                                    <menuItem title="First" state="on" id="dqk-FA-1Md"/>
+                                    <menuItem title="First" id="dqk-FA-1Md"/>
                                     <menuItem title="Second" tag="1" id="Bkt-mx-gPr"/>
                                 </items>
                             </menu>
@@ -678,6 +682,15 @@
                         </connections>
                     </popUpButton>
                 </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="aiU-lK-8jo" secondAttribute="trailing" constant="20" symbolic="YES" id="6Xz-bQ-0eM"/>
+                    <constraint firstAttribute="trailing" secondItem="IpR-HS-8ui" secondAttribute="trailing" constant="20" symbolic="YES" id="HGc-eL-yNg"/>
+                    <constraint firstItem="aiU-lK-8jo" firstAttribute="top" secondItem="IpR-HS-8ui" secondAttribute="bottom" constant="20" symbolic="YES" id="KXZ-4w-bAk"/>
+                    <constraint firstItem="aiU-lK-8jo" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="372" secondAttribute="leading" constant="20" symbolic="YES" id="fJ5-E6-pU5"/>
+                    <constraint firstAttribute="bottom" secondItem="IpR-HS-8ui" secondAttribute="bottom" constant="66" id="jB3-S9-UDz"/>
+                    <constraint firstItem="IpR-HS-8ui" firstAttribute="top" secondItem="372" secondAttribute="top" constant="20" symbolic="YES" id="uWM-nr-FoD"/>
+                    <constraint firstItem="IpR-HS-8ui" firstAttribute="leading" secondItem="372" secondAttribute="leading" constant="20" symbolic="YES" id="vEk-WG-sBt"/>
+                </constraints>
             </view>
         </window>
         <customObject id="494" customClass="AppDelegate">
