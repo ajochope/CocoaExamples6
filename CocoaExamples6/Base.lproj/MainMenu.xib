@@ -665,7 +665,7 @@
                         </constraints>
                     </customView>
                     <popUpButton verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aiU-lK-8jo">
-                        <rect key="frame" x="167" y="22" width="126" height="26"/>
+                        <rect key="frame" x="18" y="17" width="126" height="26"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="s5J-Y2-C5v">
                             <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
@@ -681,6 +681,17 @@
                             <action selector="changeView:" target="P1I-JK-zi0" id="cfN-gk-xTT"/>
                         </connections>
                     </popUpButton>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xe4-7W-lPc">
+                        <rect key="frame" x="166" y="13" width="139" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="push" title="Save some Text" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="1sh-ej-oFm">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="saveSomeText:" target="494" id="Ylc-Rz-qyM"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="aiU-lK-8jo" secondAttribute="trailing" constant="20" symbolic="YES" id="6Xz-bQ-0eM"/>
